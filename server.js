@@ -14,6 +14,7 @@ const sess = {
   secret: process.env.DB_KEY,
   cookie: {
     maxAge: 300000,
+    httpOnly: true,
     secure: false,
     sameSite: "strict",
   },
